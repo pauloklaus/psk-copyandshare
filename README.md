@@ -44,7 +44,6 @@ Create the src/resources/psk-copyandshare.js:
 ```
 import Vue from "vue";
 import CopyAndShare from "psk-copyandshare";
-import "psk-copyandshare/dist/CopyAndShare.css";
 
 Vue.use(CopyAndShare, { CopyAndShareName: "MyCopyAndShare" });
 ```
