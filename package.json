@@ -1,0 +1,67 @@
+{
+    "name": "psk-copyandshare",
+    "version": "0.1.0",
+    "description": "Input Vue component for copy text.",
+    "author": {
+        "name": "Paulo Sergio Klaus",
+        "email": "contato@pauloklaus.com.br"
+    },
+    "repository": "https://github.com/pauloklaus/psk-copyandshare",
+    "bugs": "https://github.com/pauloklaus/psk-copyandshare/issues",
+    "keywords": [
+        "input",
+        "copy",
+        "text",
+        "clipboard"
+    ],
+    "license": "GPLv3",
+    "private": false,
+    "scripts": {
+        "build": "vue-cli-service build --target lib --name CopyAndShare src/index.js",
+        "lint": "vue-cli-service lint"
+    },
+    "main": "dist/CopyAndShare.umd.js",
+    "browser": "dist/CopyAndShare.common.js",
+    "unpkg": "dist/CopyAndShare.umd.min.js",
+    "jsDelivr": "dist/CopyAndShare.umd.min.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "peerDependencies": {
+        "bootstrap": "^4.6.0",
+        "bootstrap-vue": "^2.21.2"
+    },
+    "dependencies": {
+        "core-js": "^3.6.5",
+        "vue": "^2.6.11"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-eslint": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.2.2",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {}
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
+}
