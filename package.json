@@ -17,7 +17,7 @@
     "license": "GPLv3",
     "private": false,
     "scripts": {
-        "build": "vue-cli-service build --target lib --name CopyAndShare src/index.js",
+        "build": "vue-cli-service build --target lib --name CopyAndShare src/index.js; rm ./dist/demo.html",
         "lint": "vue-cli-service lint"
     },
     "main": "dist/CopyAndShare.umd.js",
