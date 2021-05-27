@@ -2,32 +2,36 @@
 
 Vue component to copy a text to clipboard.
 
-* Report bugs: https://github.com/pauloklaus/psk-copyandshare/issues
-* Live test: https://pauloklaus.com.br/playground
+* Report bugs: <https://github.com/pauloklaus/psk-copyandshare/issues>
+* Live test: <https://pauloklaus.com.br/playground>
 
 ## Install
 
 Create a new vue project:
-```
+
+```shell
 vue create
 ```
 
 Install component and dependencies:
-```
+
+```shell
 npm install --save bootstrap bootstrap-vue psk-copyandshare
 ```
 
 ## Environment setting
 
 Make a src/resources folder at the root:
-```
+
+```shell
 mkdir src/resources
 ```
 
 ### Configure the bootstrap
 
 Create the src/resources/bootstrap-vue.js:
-```
+
+```javascript
 import Vue from "vue";
 import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
 
@@ -41,7 +45,8 @@ Vue.use(BootstrapVueIcons);
 ### Configure the psk-copyandshare
 
 Create the src/resources/psk-copyandshare.js:
-```
+
+```javascript
 import Vue from "vue";
 import CopyAndShare from "psk-copyandshare";
 
@@ -51,7 +56,8 @@ Vue.use(CopyAndShare, { CopyAndShareName: "MyCopyAndShare" });
 ### Import psk-copyandshare and dependencies
 
 The "src/main.js" file should look like this:
-```
+
+```javascript
 import Vue from "vue";
 import App from "./App.vue";
 
@@ -67,7 +73,8 @@ new Vue({
 ```
 
 ## How to use (example in App.vue)
-```
+
+```vue
 <template>
     <div>
         <copy-and-share label="Copy text:" text="Random text to copy" @copied="updateCopied" /></p>
@@ -113,7 +120,8 @@ copied | When text is copied
 ## Using in the browser
 
 To use directly in the browser, import bootstrap-vue before psk-copyandshare:
-```
+
+```html
 <script src="https://unpkg.com/vue-boostrap" />
 <script src="https://unpkg.com/psk-copyandshare" />
 ```
