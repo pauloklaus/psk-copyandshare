@@ -1,6 +1,6 @@
 {
     "name": "psk-copyandshare",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Input Vue component for copy text.",
     "author": {
         "name": "Paulo Sergio Klaus",
@@ -9,6 +9,8 @@
     "repository": "https://github.com/pauloklaus/psk-copyandshare",
     "bugs": "https://github.com/pauloklaus/psk-copyandshare/issues",
     "keywords": [
+        "vue",
+        "vuejs",
         "input",
         "copy",
         "text",
